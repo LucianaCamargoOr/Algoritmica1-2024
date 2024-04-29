@@ -9,13 +9,15 @@ using namespace std;
 int main() {
     input;
     output;
-    // Solicitar al usuario el número de nodos en el grafo.
+    // Pide al usuario el número de nodos en el grafo.
     int numNodos;
     cin >> numNodos;
 
     // Crear una matriz de adyacencia para representar el grafo.
     int grafo[numNodos][numNodos];
-    memset(grafo, 0, sizeof(grafo));
+    memset(grafo, 0, sizeof(grafo)); //todos los bytes de grafo se ponen en cero. 
+    //Este uso es común para inicializar una estructura antes de usarla para evitar 
+    //valores basura o para restablecerla a un estado limpio.
 
     // Solicitar al usuario el número de aristas en el grafo.
     int numAristas;
